@@ -108,12 +108,13 @@ public class Index {
 					newEle.value = v;
 					newEle.previous = Tail;
 					newEle.next = null;
-
-				lastPrevEle.next = Tail;
+				
 				Tail.next = newEle;	
 				Tail = newEle;
-
 				count++;
+			}
+			else {
+				addFirst(v);
 			}
 
 		}
