@@ -17,6 +17,7 @@ public class Index {
 			DLL currentHead = Head;
 			DLL newEle = new DLL();
 
+
 			//This is the first element
 			if(count == 0) {
 				newEle.previous = null;
@@ -31,16 +32,7 @@ public class Index {
 				newEle.value = v;
 				
 				currentHead.previous = newEle;
-
-				if(count == 1){
-
-					Tail = currentHead;
-					Tail.next = null;
-				}
-
 				Head = newEle;
-				
-
 				
 			}
 			count++;
