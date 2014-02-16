@@ -22,9 +22,8 @@ public class Index {
 				newEle.previous = null;
 				newEle.value  = v;
 				newEle.next = null;
-				Head = newEle;
-				Tail = null;
-
+				Head = Tail = newEle;
+			
 			}
 			else {
 				newEle.previous = null;
@@ -110,11 +109,6 @@ public class Index {
 		}
 
 		public void addLast(int v) {
-			if(Tail == null) {
-				Tail = new DLL();
-				Tail.previous = Head;
-			}
-
 			if(count > 0 ) {
 				DLL lastPrevEle = Tail.previous;
 				
